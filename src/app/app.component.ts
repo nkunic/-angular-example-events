@@ -6,12 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  // Data object
-  data = {
-    value: 'Test',
-  };
-
+  // Click event
   onLogoClicked() {
     alert('Logo clicked!');
   }
+
+  // Keyup event
+  data = {
+    value: 'Test',
+  };
+  
+  onKeyUp(newTitle:string) {
+    this.data.value = newTitle;
+  }
+
 }

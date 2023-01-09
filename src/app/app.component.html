@@ -1,10 +1,25 @@
 <h1>ANGULAR Handling native browser events</h1>
 
-<p><strong>HTML: (click)="onLogoClicked()</strong> expression which tells Angular how to handle the event</p>
-<p><strong>TS: onLogoClicked() {{ '{}' }}</strong> logic that will respond to the click</p>
+<p>
+  <strong>HTML: (click)="onLogoClicked()</strong> expression which tells Angular
+  how to handle the event
+</p>
+<p>
+  <strong>TS: onLogoClicked() {{ '{}' }}</strong> logic that will respond to the
+  click
+</p>
 
+<h2>Click event</h2>
 <img
+  style="width: 10rem; cursor: pointer"
   src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
   alt="Angular logo"
   (click)="onLogoClicked()"
 />
+
+<h2>Keyup event</h2>
+
+<p>
+  Input value: <strong>{{ data.value }}</strong>
+</p>
+<input [value]="data.value" #titleInput (keyup)="onKeyUp(titleInput.value)" />
