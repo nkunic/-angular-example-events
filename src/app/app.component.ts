@@ -15,7 +15,6 @@ export class AppComponent {
   data = {
     value: 'Test',
   };
-  
   onKeyUp(newTitle:string) {
     this.data.value = newTitle;
   }
